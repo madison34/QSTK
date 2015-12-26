@@ -99,7 +99,7 @@ symbols = np.loadtxt('SP500port.csv',dtype='S10',comments='#', skiprows=1)
 # You might get a message about some files being missing, don't worry about it.
 
 #symbols =['BFRE','ATCS','RSERF','GDNEF','LAST','ATTUF','JBFCF','CYVA','SPF','XPO','EHECF','TEMO','AOLS','CSNT','REMI','GLRP','AIFLY','BEE','DJRT','CHSTF','AICAF']
-startday = dt.datetime(2008,1,1)
+startday = dt.datetime(2009,1,1)
 endday = dt.datetime(2010,12,31)
 eventMatrix = findEvents(symbols,startday,endday,marketSymbol='SPY',verbose=True)
 
